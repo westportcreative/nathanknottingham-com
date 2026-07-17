@@ -20,7 +20,7 @@
 (function () {
   'use strict';
 
-  var GA4_ID = '';         // <-- paste your GA4 Measurement ID here
+  var GA4_ID = 'G-KC542GBY4Z';         // <-- paste your GA4 Measurement ID here
   var META_PIXEL_ID = '';  // <-- paste your Meta Pixel ID here
 
   // ---------- GA4 ----------
