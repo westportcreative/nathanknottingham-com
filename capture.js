@@ -142,6 +142,7 @@
     };
 
     function done() {
+      if (window.trackLead) window.trackLead(payload.interest, payload.source);
       msgEl.textContent = 'Got it. Your download is starting now.';
       msgEl.className = 'lc-msg ok';
       triggerDownload(current.download);
