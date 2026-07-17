@@ -43,6 +43,8 @@
   }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 2px; }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
 
   /* Nav */
   nav {
@@ -179,26 +181,26 @@
   </div>
 </header>
 
-<div class="lede wrap">
+<div class="lede wrap reveal">
   <p>Here is the thing the industry rarely says out loud. <span class="kicker">A mortgage is not a form. It's a sequence of decisions, and most of them are yours to make.</span></p>
   <p>When you understand the sequence, the scary parts stop being scary. Underwriting is not a mystery. Your rate is not a magic number. Closing is not a trap. It's a process built by people, governed by rules, and it works in your favor when you know how it moves. So let's walk it, one honest step at a time.</p>
 </div>
 
-<div class="cta-row wrap">
+<div class="cta-row wrap reveal">
   <a class="btn btn-outline" href="https://calendar.app.google/b8aW4vQztYqdSjzv6" target="_blank" rel="noopener">Schedule a call first</a>
   <a class="btn btn-brass" href="https://edge.my1003app.com/270165/register" target="_blank" rel="noopener">Start your application</a>
 </div>
 
 <section class="journey-section">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">The Journey</span>
       <h2>What actually happens, start to keys.</h2>
       <p>Seven steps. This is the whole map. Notice how much of it you control.</p>
     </div>
     <div class="journey">
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>Pre-approval</h3>
@@ -207,7 +209,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>House hunting with a real number</h3>
@@ -216,7 +218,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>The application</h3>
@@ -225,7 +227,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>Processing</h3>
@@ -234,7 +236,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>Underwriting</h3>
@@ -243,7 +245,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>Clear to close</h3>
@@ -252,7 +254,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step reveal">
         <div class="step-num"></div>
         <div>
           <h3>Closing</h3>
@@ -265,51 +267,51 @@
   </div>
 </section>
 
-<div class="cta-row wrap">
+<div class="cta-row wrap reveal">
   <a class="btn btn-outline" href="https://calendar.app.google/b8aW4vQztYqdSjzv6" target="_blank" rel="noopener">Schedule a call first</a>
   <a class="btn btn-brass" href="https://edge.my1003app.com/270165/register" target="_blank" rel="noopener">Start your application</a>
 </div>
 
 <section class="decode">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Decode the Jargon</span>
       <h2>The words they'll use, in plain English.</h2>
       <p>You'll hear these on every call. Tap any one to translate it. The rule is simple: if you can't explain it, don't sign it.</p>
     </div>
     <div class="terms">
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Interest rate vs. APR</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">Your rate is the cost of borrowing. Your APR is that rate plus most of the fees, expressed as a yearly percentage.</span> APR is the more honest apples-to-apples number when you're comparing lenders, because a low rate with high fees can cost more than a slightly higher rate with none.</div>
       </details>
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>DTI (Debt-to-Income)</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">The percentage of your monthly income that goes to debt payments.</span> Underwriters use it to answer one question: can you comfortably carry this new payment on top of what you already owe? Lower is stronger. Paying down a card before you apply can move this number in your favor.</div>
       </details>
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>LTV (Loan-to-Value)</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">How much you're borrowing compared to what the home is worth.</span> Put 20% down and your LTV is 80%. A lower LTV means less risk to the lender, which can mean a better rate and no mortgage insurance.</div>
       </details>
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>PMI &amp; MIP</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">Mortgage insurance. It protects the lender, not you, when you put down less than 20%.</span> On conventional loans it's PMI and it can eventually fall off. On FHA loans it's MIP and the rules are different. On a VA loan, there is none at all, which is a big deal.</div>
       </details>
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Escrow</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">An account your lender uses to collect a slice of your property taxes and insurance with every payment, then pays those bills for you when they come due.</span> It keeps a giant tax bill from landing on you all at once. The word also refers to the neutral third party that holds funds during closing.</div>
       </details>
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Points</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">Money you can pay up front to buy your interest rate down.</span> One point is one percent of the loan amount. Sometimes it's worth it, sometimes it isn't. The math depends on how long you'll keep the loan, and a good loan officer will show you that math instead of hiding it.</div>
       </details>
 
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Loan Estimate &amp; Closing Disclosure</h3><span class="sign">+</span></summary>
         <div class="def"><span class="plain">Two standardized forms the law requires. The Loan Estimate comes near the start and shows your projected terms and costs. The Closing Disclosure comes at the end and shows the finals.</span> Put them side by side. They're designed to be compared, so compare them.</div>
       </details>
@@ -320,28 +322,28 @@
 
 <section class="numbers">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">What Underwriters Weigh</span>
       <h2>Four numbers do most of the deciding.</h2>
       <p>Approval isn't a personality test. It comes down to a handful of measurable things. Know them, and you can strengthen your file before you ever apply.</p>
     </div>
     <div class="num-grid">
-      <div class="num-card">
+      <div class="num-card reveal">
         <span class="acr">Credit</span>
         <h3>Your track record</h3>
         <p>Your credit history shows how you've handled borrowing before. It influences whether you qualify and at what rate. You can improve it, and a few months of clean payments before applying can genuinely move your number.</p>
       </div>
-      <div class="num-card">
+      <div class="num-card reveal">
         <span class="acr">Capacity / DTI</span>
         <h3>Room in your budget</h3>
         <p>Your debt-to-income ratio proves you can carry the payment. Lowering existing debt before you apply directly widens what you qualify for.</p>
       </div>
-      <div class="num-card">
+      <div class="num-card reveal">
         <span class="acr">Down payment / LTV</span>
         <h3>Skin in the game</h3>
         <p>How much you bring affects your rate, your insurance, and your monthly cost. But down payment myths cost people homes. You often need far less than you think, and some loans need nothing down.</p>
       </div>
-      <div class="num-card">
+      <div class="num-card reveal">
         <span class="acr">Reserves</span>
         <h3>Cushion after closing</h3>
         <p>Lenders like to see money left in the tank after you close, proof you can weather a surprise. It's not always required, but it strengthens a file when it's there.</p>
@@ -350,13 +352,13 @@
   </div>
 </section>
 
-<div class="cta-row wrap">
+<div class="cta-row wrap reveal">
   <a class="btn btn-outline" href="https://calendar.app.google/b8aW4vQztYqdSjzv6" target="_blank" rel="noopener">Schedule a call first</a>
   <a class="btn btn-brass" href="https://edge.my1003app.com/270165/register" target="_blank" rel="noopener">Start your application</a>
 </div>
 
 <section class="va-thread">
-  <div class="wrap">
+  <div class="wrap reveal">
     <div class="vva-badge"><img src="/images/logo-vetted-va-badge.png" alt="Vetted VA badge"></div>
     <span class="eyebrow">If You Served</span>
     <h2>Your loan is different. It's also better, and often misunderstood.</h2>
@@ -366,7 +368,7 @@
   </div>
 </section>
 
-<div class="close">
+<div class="close reveal">
   <h2>Now you understand it. Let's get you home.</h2>
   <p>You read the whole process. You can hold your own on any call now. Grab the guide to keep, or scroll back up to schedule a call or start your application.</p>
   <a class="btn btn-brass" href="#" data-lead-open data-download="/homebuyer-guide.pdf" data-interest="Homebuyer Guide" data-source="homebuyer" data-title="Get the free homebuyer guide" data-sub="The whole process on paper, yours to keep. Tell me where to send it.">Download the free guide</a>
@@ -386,6 +388,21 @@
   window.LEAD_ENDPOINT = '';
 </script>
 <script src="/capture.js" defer></script>
+
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  })();
+</script>
 
 </body>
 </html>

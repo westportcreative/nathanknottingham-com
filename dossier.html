@@ -62,6 +62,8 @@
   }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   a:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 2px; }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
 
   nav {
     position: sticky; top: 0; z-index: 50;
@@ -207,42 +209,42 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Professional Timeline</span>
       <h2>Nineteen years, one through-line: educate first.</h2>
     </div>
     <div class="timeline">
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2007</span>
         <h3>Licensed loan originator, Oregon</h3>
         <p>Entered the industry in May 2007, months before the crash. Learned early that the originators who survive are the ones who know their craft and tell the truth.</p>
       </div>
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2013 to 2016</span>
         <h3>President, McMinnville Area Chamber of Commerce</h3>
         <p>First run at community leadership, building the muscle for connecting businesses, people, and causes.</p>
       </div>
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2016 to 2020</span>
         <h3>VP of Training &amp; Development, then COO, Knowledge Coop</h3>
         <p>Ran training and operations for a national mortgage education company. This is where story-first compliance teaching became a conviction, not a style.</p>
       </div>
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2019</span>
         <h3>Co-founded Vetted VA with Christopher Griffith</h3>
         <p>Built a national network around one idea: veterans deserve professionals who can prove they know the VA benefit. Trust, but verify. More than 5,000 families helped since 2020.</p>
       </div>
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2024</span>
         <h3>CEO &amp; co-founder, MLO Force</h3>
         <p>An NMLS-approved CE and PE provider built for independent-minded originators who choose their own education instead of taking whatever corporate assigns.</p>
       </div>
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2024</span>
         <h3>Be My Neighbor acquired by reAlpha</h3>
         <p>Co-founded Be My Neighbor Mortgage, which was acquired by reAlpha Tech Corp to power its AI-driven homebuying platform.</p>
       </div>
-      <div class="tl-item">
+      <div class="tl-item reveal">
         <span class="eyebrow">2026</span>
         <h3>SVP of Education &amp; VA Strategy, Edge Home Finance</h3>
         <p>Joined one of the largest independent broker platforms in the country, home to more than 1,000 loan officers, to expand education initiatives and lead VA strategy. Still originating.</p>
@@ -253,24 +255,24 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">The Companies</span>
       <h2>Three hats, one mission.</h2>
     </div>
     <div class="co-grid">
-      <a class="co-card" href="https://edgehomefinance.com/team-member/nathan-knottingham/" target="_blank" rel="noopener">
+      <a class="co-card reveal" href="https://edgehomefinance.com/team-member/nathan-knottingham/" target="_blank" rel="noopener">
         <img class="co-logo" src="/images/logo-edge.jpg" alt="Edge Home Finance logo">
         <span class="eyebrow">Originate</span>
         <h3>Edge Home Finance</h3>
         <p>Mortgage broker and SVP of Education &amp; VA Strategy. Where the loans close.</p>
       </a>
-      <a class="co-card" href="https://vettedva.com" target="_blank" rel="noopener">
+      <a class="co-card reveal" href="https://vettedva.com" target="_blank" rel="noopener">
         <img class="co-logo" src="/images/logo-vetted-va-badge.png" alt="Vetted VA logo">
         <span class="eyebrow">Protect</span>
         <h3>Vetted VA</h3>
         <p>Co-founder and COO. Education and accountability for VA lending, nationwide.</p>
       </a>
-      <a class="co-card" href="https://mloforce.com" target="_blank" rel="noopener">
+      <a class="co-card reveal" href="https://mloforce.com" target="_blank" rel="noopener">
         <img class="co-logo" src="/images/logo-mlo-force.png" alt="MLO Force logo">
         <span class="eyebrow">Educate</span>
         <h3>MLO Force</h3>
@@ -282,50 +284,54 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Writing &amp; Speaking</span>
       <h2>On stages and in print.</h2>
     </div>
-    <p>I contribute to HousingWire on compliance, licensing trends, and leadership, and speak at mortgage industry conferences nationwide. Past stages include the MBA Research and Curriculum Center's national Conclave, where I presented on developing ethical leaders to educators and state education leaders from across the country.</p>
-    <p>I also serve as President of the Pottsboro Area Chamber of Commerce, because community leadership is not a phase, apparently.</p>
+    <div class="reveal">
+      <p>I contribute to HousingWire on compliance, licensing trends, and leadership, and speak at mortgage industry conferences nationwide. Past stages include the MBA Research and Curriculum Center's national Conclave, where I presented on developing ethical leaders to educators and state education leaders from across the country.</p>
+      <p>I also serve as President of the Pottsboro Area Chamber of Commerce, because community leadership is not a phase, apparently.</p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap off-clock-grid">
     <div>
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Off the Clock</span>
         <h2>The personal file.</h2>
       </div>
-      <p>Fourth-generation Oregonian, raised in Salem, now rooted in North Texas. Husband to Billie Julene. Dad to Titus and Trinity. Two dogs, Emmett and Indy, who contribute nothing to loan production.</p>
-      <p>I've played bass since fourth grade and still play weekly at my church, where I also edit video. I hold a B.A. in Business Management and English Communication and an MBA, both from Corban University. I do woodworking badly and tie bow ties well.</p>
-      <p>Everything I build runs on the same three values: faith, family, and generational legacy. That's not a tagline. It's the filter every decision goes through.</p>
+      <div class="reveal">
+        <p>Fourth-generation Oregonian, raised in Salem, now rooted in North Texas. Husband to Billie Julene. Dad to Titus and Trinity. Two dogs, Emmett and Indy, who contribute nothing to loan production.</p>
+        <p>I've played bass since fourth grade and still play weekly at my church, where I also edit video. I hold a B.A. in Business Management and English Communication and an MBA, both from Corban University. I do woodworking badly and tie bow ties well.</p>
+        <p>Everything I build runs on the same three values: faith, family, and generational legacy. That's not a tagline. It's the filter every decision goes through.</p>
+      </div>
     </div>
-    <img class="off-clock-photo" src="/images/nathan-bowtie.jpg" alt="Nathan Knottingham in a bow tie">
+    <img class="off-clock-photo reveal" src="/images/nathan-bowtie.jpg" alt="Nathan Knottingham in a bow tie">
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Find Me Everywhere</span>
       <h2>Verify all of it.</h2>
     </div>
     <div class="find-grid">
-      <a class="find-link" href="https://www.linkedin.com/in/nathanknottingham/" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>/in/nathanknottingham</span></a>
-      <a class="find-link" href="https://youtube.com/@nathanknottinghamofficial" target="_blank" rel="noopener"><strong>YouTube</strong><span>@nathanknottinghamofficial</span></a>
-      <a class="find-link" href="https://www.instagram.com/n8knottingham/" target="_blank" rel="noopener"><strong>Instagram</strong><span>@n8knottingham</span></a>
-      <a class="find-link" href="https://www.facebook.com/nate.knottingham/" target="_blank" rel="noopener"><strong>Facebook</strong><span>nate.knottingham</span></a>
-      <a class="find-link" href="https://www.housingwire.com/author/nathan-knottingham/" target="_blank" rel="noopener"><strong>HousingWire</strong><span>Author page</span></a>
-      <a class="find-link" href="https://vettedva.com/leadership/" target="_blank" rel="noopener"><strong>Vetted VA</strong><span>Leadership</span></a>
-      <a class="find-link" href="https://edgehomefinance.com/team-member/nathan-knottingham/" target="_blank" rel="noopener"><strong>Edge Home Finance</strong><span>Team profile</span></a>
-      <a class="find-link" href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener"><strong>NMLS Consumer Access</strong><span>NMLS #270165</span></a>
+      <a class="find-link reveal" href="https://www.linkedin.com/in/nathanknottingham/" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>/in/nathanknottingham</span></a>
+      <a class="find-link reveal" href="https://youtube.com/@nathanknottinghamofficial" target="_blank" rel="noopener"><strong>YouTube</strong><span>@nathanknottinghamofficial</span></a>
+      <a class="find-link reveal" href="https://www.instagram.com/n8knottingham/" target="_blank" rel="noopener"><strong>Instagram</strong><span>@n8knottingham</span></a>
+      <a class="find-link reveal" href="https://www.facebook.com/nate.knottingham/" target="_blank" rel="noopener"><strong>Facebook</strong><span>nate.knottingham</span></a>
+      <a class="find-link reveal" href="https://www.housingwire.com/author/nathan-knottingham/" target="_blank" rel="noopener"><strong>HousingWire</strong><span>Author page</span></a>
+      <a class="find-link reveal" href="https://vettedva.com/leadership/" target="_blank" rel="noopener"><strong>Vetted VA</strong><span>Leadership</span></a>
+      <a class="find-link reveal" href="https://edgehomefinance.com/team-member/nathan-knottingham/" target="_blank" rel="noopener"><strong>Edge Home Finance</strong><span>Team profile</span></a>
+      <a class="find-link reveal" href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener"><strong>NMLS Consumer Access</strong><span>NMLS #270165</span></a>
     </div>
   </div>
 </section>
 
-<div class="cta-band">
+<div class="cta-band reveal">
   <h2>You've read the file. Now let's talk.</h2>
   <p>Whether you need a mortgage, a team, or training that doesn't put you to sleep, the next step is one email.</p>
   <a class="btn" href="/#contact">Get in touch</a>
@@ -338,6 +344,21 @@
     <p>&copy; 2026 Nathan Knottingham. Built in North Texas.</p>
   </div>
 </footer>
+
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  })();
+</script>
 
 </body>
 </html>

@@ -124,6 +124,8 @@
   }
   .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
 
   /* Nav */
   nav {
@@ -324,31 +326,33 @@
 
 <section>
   <div class="wrap prose">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Start Here</span>
       <h2>The federal minimum is only half the story.</h2>
     </div>
-    <p>Here is the trap. A loan officer completes twenty hours of pre-licensure education, eight hours of continuing education a year, and assumes they are covered everywhere. Then they get licensed in a new state and discover that state wants additional hours on its own laws. The renewal stalls, the pipeline freezes, and nobody warned them.</p>
-    <p>The <strong>SAFE Act</strong> sets a national floor for every mortgage loan originator: <strong>20 hours of pre-licensure education (PE)</strong> before you are licensed, and <strong>at least 8 hours of continuing education (CE)</strong> every year to renew. That federal 8 hours is fixed by rule: three hours of federal law, two hours of ethics, two hours of non-traditional mortgage lending, and one hour of elective content.</p>
-    <p>On top of that floor, many states add their own <strong>state-specific hours</strong>. Some add nothing. Some, like Nevada, push the pre-licensure total all the way to thirty. This page separates the two clearly for all fifty states plus the District of Columbia, so you can see your real number instead of guessing.</p>
+    <div class="reveal">
+      <p>Here is the trap. A loan officer completes twenty hours of pre-licensure education, eight hours of continuing education a year, and assumes they are covered everywhere. Then they get licensed in a new state and discover that state wants additional hours on its own laws. The renewal stalls, the pipeline freezes, and nobody warned them.</p>
+      <p>The <strong>SAFE Act</strong> sets a national floor for every mortgage loan originator: <strong>20 hours of pre-licensure education (PE)</strong> before you are licensed, and <strong>at least 8 hours of continuing education (CE)</strong> every year to renew. That federal 8 hours is fixed by rule: three hours of federal law, two hours of ethics, two hours of non-traditional mortgage lending, and one hour of elective content.</p>
+      <p>On top of that floor, many states add their own <strong>state-specific hours</strong>. Some add nothing. Some, like Nevada, push the pre-licensure total all the way to thirty. This page separates the two clearly for all fifty states plus the District of Columbia, so you can see your real number instead of guessing.</p>
+    </div>
     <div class="num-grid">
-      <div class="num-card"><div class="num">20</div><p>Federal PE hours required nationwide before licensure</p></div>
-      <div class="num-card"><div class="num">8</div><p>Federal CE hours required every year to renew</p></div>
-      <div class="num-card"><div class="num">51</div><p>Jurisdictions mapped: all 50 states plus DC</p></div>
-      <div class="num-card"><div class="num">30</div><p>Highest total PE hours in any state (Nevada)</p></div>
+      <div class="num-card reveal"><div class="num">20</div><p>Federal PE hours required nationwide before licensure</p></div>
+      <div class="num-card reveal"><div class="num">8</div><p>Federal CE hours required every year to renew</p></div>
+      <div class="num-card reveal"><div class="num">51</div><p>Jurisdictions mapped: all 50 states plus DC</p></div>
+      <div class="num-card reveal"><div class="num">30</div><p>Highest total PE hours in any state (Nevada)</p></div>
     </div>
   </div>
 </section>
 
 <section id="map" class="numbers">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Interactive Map</span>
       <h2>Click your state</h2>
       <p>Each tile is a state. Warmer tiles require more than the federal minimum. Tap or click any state to see its full pre-licensure and continuing education breakdown, then head straight to your approved courses.</p>
     </div>
 
-    <div class="map-tools">
+    <div class="map-tools reveal">
       <div class="search-box">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <input id="search" type="text" placeholder="Search a state, for example Texas" aria-label="Search for a state">
@@ -361,7 +365,7 @@
       </div>
     </div>
 
-    <div class="map-scroll">
+    <div class="map-scroll reveal">
       <div class="us-grid" id="usGrid" role="group" aria-label="Interactive map of United States NMLS education requirements"></div>
     </div>
   </div>
@@ -369,18 +373,18 @@
 
 <section>
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Full Reference</span>
       <h2>NMLS requirements for all 50 states plus DC</h2>
       <p>Prefer a list? Every jurisdiction is below with its pre-licensure and continuing education totals. Click any state for the full breakdown and your enrollment link.</p>
     </div>
-    <div class="state-grid" id="stateGrid"></div>
+    <div class="state-grid reveal" id="stateGrid"></div>
     <p class="no-results hidden" id="noResults">No state matches that search. Check the spelling or try a two-letter abbreviation.</p>
   </div>
 </section>
 
 <div class="band">
-  <div class="wrap">
+  <div class="wrap reveal">
     <h2>You found the requirement. Now go knock it out.</h2>
     <p>MLO Force delivers NMLS-approved continuing education that keeps you compliant without putting you to sleep. Story-first teaching, real scenarios, and content built by people who actually originate.</p>
     <a class="btn btn-brass" href="https://www.mloforce.com/nmlscontinuingeducation?utm_source=nathanknottingham.com&amp;utm_medium=referral&amp;utm_campaign=nmls_state_requirements&amp;utm_content=band" target="_blank" rel="noopener">Enroll in NMLS CE at MLO Force</a>
@@ -389,33 +393,33 @@
 
 <section class="decode">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="eyebrow">Questions</span>
       <h2>NMLS education, answered</h2>
       <p>The rule is simple: if you can't explain your requirement, don't wait until renewal week to figure it out.</p>
     </div>
     <div class="terms">
-      <details class="term" open>
+      <details class="term reveal" open>
         <summary><h3>How many hours of NMLS continuing education do I need each year?</h3><span class="sign">+</span></summary>
         <div class="def">The federal SAFE Act requires at least 8 hours of NMLS-approved continuing education every year to renew a mortgage loan originator license. That 8 hours breaks down into 3 hours of federal law, 2 hours of ethics, 2 hours of non-traditional mortgage lending, and 1 hour of elective. Some states require additional state-specific hours on top of the federal 8, so your true total depends on where you are licensed. Use the map above to see your state.</div>
       </details>
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>How many hours of pre-licensure education are required to become an MLO?</h3><span class="sign">+</span></summary>
         <div class="def">The federal minimum is 20 hours of NMLS-approved pre-licensure education. Several states require more. Nevada requires 30 total hours, Utah requires 25, and North Carolina, Ohio, and West Virginia each require 24. Your state's exact requirement is shown when you click its tile.</div>
       </details>
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Do all states require state-specific NMLS education?</h3><span class="sign">+</span></summary>
         <div class="def">No. Many states only require the federal minimum of 20 pre-licensure hours and 8 continuing education hours. Others add state-specific hours covering that state's own mortgage laws. This page shows both the federal baseline and any additional state hours for every jurisdiction.</div>
       </details>
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Can I use AI or shortcuts to complete NMLS courses?</h3><span class="sign">+</span></summary>
         <div class="def">No. Under NMLS Rules of Conduct, AI assistance is not permitted for course completion, identity verification is required, and seat time is strictly enforced. Violations can result in loss of course credit, fines, or license action. Complete your education honestly through an NMLS-approved provider.</div>
       </details>
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>Where do I complete my NMLS continuing education?</h3><span class="sign">+</span></summary>
         <div class="def">You must use an NMLS-approved course provider. MLO Force offers NMLS-approved continuing education built to keep you compliant and genuinely engaged. You can <a href="https://www.mloforce.com/nmlscontinuingeducation?utm_source=nathanknottingham.com&amp;utm_medium=referral&amp;utm_campaign=nmls_state_requirements&amp;utm_content=faq" target="_blank" rel="noopener" style="color: var(--brass)">enroll at MLO Force</a>.</div>
       </details>
-      <details class="term">
+      <details class="term reveal">
         <summary><h3>When is the NMLS continuing education deadline?</h3><span class="sign">+</span></summary>
         <div class="def">The NMLS renewal period typically runs from November 1 to December 31 each year, and continuing education must be completed before you can renew. Individual state agencies can set their own deadlines and rules, so confirm your state's specific dates in the NMLS Resource Center and finish your CE early to avoid a lapse.</div>
       </details>
@@ -425,7 +429,7 @@
 
 <section>
   <div class="wrap">
-    <div class="note-box">
+    <div class="note-box reveal">
       <strong>A note on accuracy.</strong> The hours shown here were verified against the NMLS Testing Handbook state-specific education requirements in July 2026. State agencies update their requirements and deadlines periodically, and some jurisdictions have more than one mortgage regulator with different rules. Treat this page as a starting point, not legal or licensing advice. Always confirm your current, exact requirements in the <a href="https://mortgage.nationwidelicensingsystem.org/" target="_blank" rel="noopener" style="color: var(--va-red)">NMLS Resource Center</a> before you enroll or renew.
     </div>
   </div>
@@ -642,6 +646,21 @@ search.addEventListener("input", function(){
 
   noResults.classList.toggle("hidden", visible>0);
 });
+</script>
+
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  })();
 </script>
 
 </body>
