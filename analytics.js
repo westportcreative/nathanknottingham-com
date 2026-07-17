@@ -21,7 +21,7 @@
   'use strict';
 
   var GA4_ID = 'G-KC542GBY4Z';         // <-- paste your GA4 Measurement ID here
-  var META_PIXEL_ID = '';  // <-- paste your Meta Pixel ID here
+  var META_PIXEL_ID = '1643013343438793';  // <-- paste your Meta Pixel ID here
 
   // ---------- GA4 ----------
   if (GA4_ID) {
