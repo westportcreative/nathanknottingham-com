@@ -100,6 +100,9 @@
   .video-slot-badge svg { color: var(--brass); }
   .video-slot.small { aspect-ratio: 16 / 9; margin-top: 18px; }
   .video-slot.small .video-slot-badge { font-size: 0.68rem; }
+  .video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--ink-deep); border: 1px solid rgba(237,234,226,0.12); }
+  .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-frame.small { margin-top: 18px; }
 
   /* Sections */
   section { padding: 56px 0; }
@@ -199,12 +202,8 @@
       <a class="btn btn-brass" href="https://www.mloforce.com?utm_source=nathanknottingham.com&amp;utm_medium=referral&amp;utm_campaign=compliance_cheat_codes&amp;utm_content=hero" target="_blank" rel="noopener">Enroll at MLO Force</a>
       <a class="btn btn-ghost" href="#modules">See the modules</a>
     </div>
-    <div class="video-slot">
-      <!-- VIDEO: replace this placeholder with the series trailer / Compliance 1 - Intro embed once uploaded to YouTube -->
-      <div class="video-slot-badge">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        <span>Series trailer &mdash; video coming soon</span>
-      </div>
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/nBuyg_IAmCM" title="The Contra Cheat Code That Explains How To Actually Pass Compliance" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </header>
