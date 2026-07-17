@@ -15,7 +15,7 @@
   "name": "Nathan Knottingham",
   "url": "https://nathanknottingham.com",
   "jobTitle": "SVP of Education and VA Strategy",
-  "image": "https://edgehomefinance.com/clients/7889/uploads/2026/05/2026-New-Head-Shot.jpg",
+  "image": "https://nathanknottingham.com/images/nathan-headshot-square.jpg",
   "worksFor": { "@type": "Organization", "name": "Edge Home Finance Corporation" },
   "sameAs": [
     "https://www.linkedin.com/in/nathanknottingham/",
@@ -134,9 +134,16 @@
     transition: transform 0.18s ease, border-color 0.18s ease;
   }
   .co-card:hover, .co-card:focus-visible { transform: translateY(-3px); border-color: var(--brass); }
+  .co-logo { height: 32px; width: auto; max-width: 140px; object-fit: contain; object-position: left center; display: block; margin-bottom: 16px; }
   .co-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; }
   .co-card .eyebrow { color: var(--va-red); display: block; margin-bottom: 10px; font-size: 0.68rem; }
   .co-card p { font-size: 0.92rem; }
+
+  /* Off the clock */
+  .off-clock-grid { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: start; }
+  @media (max-width: 700px) { .off-clock-grid { grid-template-columns: 1fr; } }
+  .off-clock-photo { width: 100%; height: auto; object-fit: cover; border: 3px solid var(--brass); }
+  @media (max-width: 700px) { .off-clock-photo { max-width: 200px; } }
 
   /* Find me */
   .find-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -194,7 +201,7 @@
         <span class="role-chip">HousingWire Contributor</span>
       </div>
     </div>
-    <img class="header-photo" src="https://edgehomefinance.com/clients/7889/uploads/2026/05/2026-New-Head-Shot.jpg" alt="Nathan Knottingham">
+    <img class="header-photo" src="/images/nathan-headshot-square.jpg" alt="Nathan Knottingham">
   </div>
 </header>
 
@@ -252,16 +259,19 @@
     </div>
     <div class="co-grid">
       <a class="co-card" href="https://edgehomefinance.com/team-member/nathan-knottingham/" target="_blank" rel="noopener">
+        <img class="co-logo" src="/images/logo-edge.jpg" alt="Edge Home Finance logo">
         <span class="eyebrow">Originate</span>
         <h3>Edge Home Finance</h3>
         <p>Mortgage broker and SVP of Education &amp; VA Strategy. Where the loans close.</p>
       </a>
       <a class="co-card" href="https://vettedva.com" target="_blank" rel="noopener">
+        <img class="co-logo" src="/images/logo-vetted-va-badge.png" alt="Vetted VA logo">
         <span class="eyebrow">Protect</span>
         <h3>Vetted VA</h3>
         <p>Co-founder and COO. Education and accountability for VA lending, nationwide.</p>
       </a>
       <a class="co-card" href="https://mloforce.com" target="_blank" rel="noopener">
+        <img class="co-logo" src="/images/logo-mlo-force.png" alt="MLO Force logo">
         <span class="eyebrow">Educate</span>
         <h3>MLO Force</h3>
         <p>CEO and co-founder. NMLS-approved CE and PE that people take on purpose.</p>
@@ -282,14 +292,17 @@
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Off the Clock</span>
-      <h2>The personal file.</h2>
+  <div class="wrap off-clock-grid">
+    <div>
+      <div class="section-head">
+        <span class="eyebrow">Off the Clock</span>
+        <h2>The personal file.</h2>
+      </div>
+      <p>Fourth-generation Oregonian, raised in Salem, now rooted in North Texas. Husband to Billie Julene. Dad to Titus and Trinity. Two dogs, Emmett and Indy, who contribute nothing to loan production.</p>
+      <p>I've played bass since fourth grade and still play weekly at my church, where I also edit video. I hold a B.A. in Business Management and English Communication and an MBA, both from Corban University. I do woodworking badly and tie bow ties well.</p>
+      <p>Everything I build runs on the same three values: faith, family, and generational legacy. That's not a tagline. It's the filter every decision goes through.</p>
     </div>
-    <p>Fourth-generation Oregonian, raised in Salem, now rooted in North Texas. Husband to Billie Julene. Dad to Titus and Trinity. Two dogs, Emmett and Indy, who contribute nothing to loan production.</p>
-    <p>I've played bass since fourth grade and still play weekly at my church, where I also edit video. I hold a B.A. in Business Management and English Communication and an MBA, both from Corban University. I do woodworking badly and tie bow ties well.</p>
-    <p>Everything I build runs on the same three values: faith, family, and generational legacy. That's not a tagline. It's the filter every decision goes through.</p>
+    <img class="off-clock-photo" src="/images/nathan-bowtie.jpg" alt="Nathan Knottingham in a bow tie">
   </div>
 </section>
 

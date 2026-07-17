@@ -162,6 +162,9 @@
   /* ---------- About ---------- */
   #about p { max-width: 62ch; margin-bottom: 18px; color: #3A4150; }
   #about .eyebrow { color: #2E6FA3; }
+  .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
+  @media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; } }
+  .about-photo { width: 100%; height: auto; object-fit: cover; }
 
   /* ---------- Contact ---------- */
   #contact { text-align: center; padding: 100px 0; }
@@ -342,16 +345,19 @@
 </section>
 
 <section id="about" class="light" style="background: var(--paper-dim);">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">About Nathan</span>
-      <h2>Fourth-generation Oregonian. First-generation Texan.</h2>
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-head reveal">
+        <span class="eyebrow">About Nathan</span>
+        <h2>Fourth-generation Oregonian. First-generation Texan.</h2>
+      </div>
+      <div class="reveal">
+        <p>I started in mortgage in 2007, which means my first year in the business was everyone else's worst. That timing taught me everything: the loan officers who survived were the ones who knew their craft and told the truth.</p>
+        <p>Since then I've originated, run training and operations for a national mortgage school, co-founded Vetted VA with Christopher Griffith, and built MLO Force into an NMLS-approved education provider. I write for HousingWire, speak at industry conferences, and serve as president of my local chamber of commerce.</p>
+        <p>Off the clock I'm a husband to Billie Julene, dad to Titus and Trinity, a church bass player, and a firm believer that a well-tied bow tie fixes most problems.</p>
+      </div>
     </div>
-    <div class="reveal">
-      <p>I started in mortgage in 2007, which means my first year in the business was everyone else's worst. That timing taught me everything: the loan officers who survived were the ones who knew their craft and told the truth.</p>
-      <p>Since then I've originated, run training and operations for a national mortgage school, co-founded Vetted VA with Christopher Griffith, and built MLO Force into an NMLS-approved education provider. I write for HousingWire, speak at industry conferences, and serve as president of my local chamber of commerce.</p>
-      <p>Off the clock I'm a husband to Billie Julene, dad to Titus and Trinity, a church bass player, and a firm believer that a well-tied bow tie fixes most problems.</p>
-    </div>
+    <img class="about-photo reveal" src="/images/nathan-portrait-wide.jpg" alt="Nathan Knottingham">
   </div>
 </section>
 
