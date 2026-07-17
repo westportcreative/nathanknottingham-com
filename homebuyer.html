@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understand Your Mortgage Before You Sign It | Nathan Knottingham</title>
+<meta name="description" content="A plain-language walkthrough of how a mortgage actually works, taught by Nathan Knottingham, NMLS #270165. Learn the process, decode the jargon, then apply with confidence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23B41824' d='M2 6l8 3.2v5.6L2 18zM22 6l-8 3.2v5.6L22 18z'/%3E%3Crect fill='%23C9963B' x='10' y='9' width='4' height='6' rx='1'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #101B2D;
+    --ink-deep: #0A1220;
+    --paper: #F2F0EA;
+    --paper-dim: #E7E4DB;
+    --brass: #C9963B;
+    --va-red: #B41824;
+    --force-blue: #9CC3E5;
+    --text-light: #EDEAE2;
+    --text-mute: #8B94A3;
+    --body-mute: #4A5261;
+    --max: 820px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 1.0625rem;
+    line-height: 1.72;
+  }
+  h1, h2, h3 { font-family: 'Bricolage Grotesque', sans-serif; line-height: 1.1; }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 2px; }
+
+  /* Nav */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10, 18, 32, 0.94); backdrop-filter: blur(8px);
+  }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-name { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1rem; color: var(--text-light); text-decoration: none; }
+  .nav-name span { color: var(--brass); }
+  .nav-back { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mute); text-decoration: none; }
+  .nav-back:hover { color: var(--text-light); }
+
+  /* Hero */
+  header { background: var(--ink); color: var(--text-light); padding: 84px 0 68px; }
+  header .eyebrow { color: var(--brass); display: block; margin-bottom: 18px; }
+  header h1 { font-size: clamp(2.1rem, 5.5vw, 3.4rem); font-weight: 800; margin-bottom: 22px; max-width: 20ch; }
+  header h1 em { font-style: normal; color: var(--brass); }
+  header p { color: var(--text-mute); max-width: 58ch; font-size: 1.12rem; }
+
+  /* Lede */
+  .lede { padding: 60px 0 20px; }
+  .lede p { font-size: 1.2rem; color: var(--ink); max-width: 60ch; }
+  .lede p + p { margin-top: 18px; }
+  .lede .kicker { color: var(--va-red); font-weight: 600; }
+
+  /* Journey */
+  section { padding: 56px 0; }
+  .section-head { margin-bottom: 36px; }
+  .section-head .eyebrow { color: var(--va-red); display: block; margin-bottom: 12px; }
+  .section-head h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 800; margin-bottom: 14px; }
+  .section-head p { color: var(--body-mute); max-width: 62ch; }
+
+  .journey { counter-reset: step; }
+  .step {
+    display: grid; grid-template-columns: 64px 1fr; gap: 20px;
+    padding: 28px 0; border-top: 1px solid rgba(16,27,45,0.12);
+  }
+  .step:first-child { border-top: 0; padding-top: 0; }
+  .step-num {
+    counter-increment: step;
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1.5rem;
+    color: var(--brass); line-height: 1;
+  }
+  .step-num::before { content: counter(step, decimal-leading-zero); }
+  .step h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; }
+  .step p { color: var(--body-mute); font-size: 1rem; }
+  .step .yours {
+    display: block; margin-top: 12px; font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink);
+    background: var(--paper-dim); border-left: 3px solid var(--va-red);
+    padding: 10px 14px;
+  }
+  .step .yours strong { color: var(--va-red); }
+  @media (max-width: 560px) { .step { grid-template-columns: 1fr; gap: 8px; } }
+
+  /* Jargon decoder */
+  .decode { background: var(--ink); color: var(--text-light); }
+  .decode .section-head .eyebrow { color: var(--brass); }
+  .decode .section-head p { color: var(--text-mute); }
+  .terms { border-top: 1px solid rgba(237,234,226,0.14); }
+  .term { border-bottom: 1px solid rgba(237,234,226,0.14); }
+  .term summary {
+    cursor: pointer; list-style: none; padding: 20px 0;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+  }
+  .term summary::-webkit-details-marker { display: none; }
+  .term summary h3 { font-size: 1.1rem; font-weight: 600; color: var(--text-light); }
+  .term summary .sign { font-family: 'IBM Plex Mono', monospace; color: var(--brass); font-size: 1.3rem; line-height: 1; transition: transform 0.2s ease; }
+  .term[open] summary .sign { transform: rotate(45deg); }
+  .term .def { padding: 0 0 22px; color: var(--text-mute); max-width: 64ch; }
+  .term .def .plain { color: var(--text-light); font-weight: 600; }
+
+  /* The numbers */
+  .numbers { background: var(--paper-dim); }
+  .numbers .section-head .eyebrow { color: var(--va-red); }
+  .num-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .num-grid { grid-template-columns: 1fr; } }
+  .num-card { background: #FBFAF6; border: 1px solid rgba(16,27,45,0.14); border-top: 3px solid var(--brass); padding: 22px; }
+  .num-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
+  .num-card .acr { font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--va-red); display: block; margin-bottom: 10px; }
+  .num-card p { font-size: 0.95rem; color: var(--body-mute); }
+
+  /* VA thread */
+  .va-thread { background: var(--va-red); color: #fff; }
+  .va-thread .eyebrow { color: #F6C9CD; display: block; margin-bottom: 14px; }
+  .va-thread h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 16px; max-width: 22ch; }
+  .va-thread p { max-width: 60ch; margin-bottom: 14px; color: #FBE4E6; }
+  .va-thread .btn { background: #fff; color: var(--va-red); margin-top: 12px; }
+
+  /* Close / CTA */
+  .close { background: var(--ink-deep); color: var(--text-light); text-align: center; padding: 84px 24px; }
+  .close h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 16px; }
+  .close p { color: var(--text-mute); max-width: 50ch; margin: 0 auto 30px; }
+  .btn {
+    display: inline-block; text-decoration: none;
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 1rem;
+    padding: 15px 30px; transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); opacity: 0.93; }
+  .btn-brass { background: var(--brass); color: var(--ink-deep); }
+  .btn-ghost { border: 1px solid rgba(237,234,226,0.3); color: var(--text-light); margin-left: 10px; }
+  @media (max-width: 480px) { .btn-ghost { margin-left: 0; margin-top: 12px; } }
+
+  footer { background: var(--ink-deep); color: var(--text-mute); padding: 40px 0; font-size: 0.82rem; border-top: 1px solid rgba(237,234,226,0.08); }
+  footer .wrap > p { margin-bottom: 12px; max-width: 90ch; }
+  footer a { color: var(--text-mute); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="/"><svg width="18" height="18" viewBox="0 0 24 24" style="vertical-align:-3px;margin-right:7px" aria-hidden="true"><path fill="#B41824" d="M2 6l8 3.2v5.6L2 18zM22 6l-8 3.2v5.6L22 18z"/><rect fill="#C9963B" x="10" y="9" width="4" height="6" rx="1"/></svg>Nathan <span>Knottingham</span></a>
+    <a class="nav-back" href="/">&larr; Back home</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">For Homebuyers &middot; NMLS #270165</span>
+    <h1>Nobody explained the loan to you. <em>Let's fix that first.</em></h1>
+    <p>Most people apply for a mortgage the way they'd sign a phone contract: fast, nervous, and hoping someone honest is on the other end. You deserve better than hope. Read this, then apply knowing exactly what you're doing.</p>
+  </div>
+</header>
+
+<div class="lede wrap">
+  <p>Here is the thing the industry rarely says out loud. <span class="kicker">A mortgage is not a form. It's a sequence of decisions, and most of them are yours to make.</span></p>
+  <p>When you understand the sequence, the scary parts stop being scary. Underwriting is not a mystery. Your rate is not a magic number. Closing is not a trap. It's a process built by people, governed by rules, and it works in your favor when you know how it moves. So let's walk it, one honest step at a time.</p>
+</div>
+
+<section class="journey-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The Journey</span>
+      <h2>What actually happens, start to keys.</h2>
+      <p>Seven steps. This is the whole map. Notice how much of it you control.</p>
+    </div>
+    <div class="journey">
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>Pre-approval</h3>
+          <p>Before you tour a single house, a lender looks at your income, your debts, and your credit, and tells you what you can realistically borrow. This is not a promise, it's a well-informed estimate. Done right, it makes your offer stronger than a buyer who's just guessing.</p>
+          <span class="yours"><strong>Your move:</strong> Get pre-approved before you shop, not after you fall in love with a house.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>House hunting with a real number</h3>
+          <p>Now you shop inside the range you actually qualify for. When you find the one, you make an offer. Part of that offer is earnest money, a good-faith deposit that tells the seller you mean it. It's not a fee, it goes toward your costs at closing.</p>
+          <span class="yours"><strong>Your move:</strong> Shop the payment, not just the price. A cheaper house with higher taxes can cost more monthly.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>The application</h3>
+          <p>Offer accepted. Now the real file opens. You'll provide income documents, bank statements, and identification. This is where the loan officer earns their keep, structuring your file so it tells a clean story to the people who approve it.</p>
+          <span class="yours"><strong>Your move:</strong> Do not make big money moves right now. No new cars, no new credit cards, no large unexplained deposits.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>Processing</h3>
+          <p>A processor gathers everything the file needs: the appraisal that confirms the home's value, the title work that confirms the seller can actually sell it, and verification of the details you provided. Think of this as building the case before it goes to the judge.</p>
+          <span class="yours"><strong>Your move:</strong> Answer requests fast. Every day you sit on a document is a day added to your closing.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>Underwriting</h3>
+          <p>The underwriter is the decision-maker. They confirm you can repay the loan and that the home is worth what you're paying. They may ask for a few more items, called conditions. This is normal. Conditions are not rejection, they're the last few boxes getting checked.</p>
+          <span class="yours"><strong>Your move:</strong> Stay reachable. A fast answer to a condition can save your closing date.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>Clear to close</h3>
+          <p>The three best words in the process. Underwriting is satisfied. Three business days before you sign, you receive your Closing Disclosure, a document that lays out your final numbers. The law gives you those days on purpose, so you can read every line before you commit.</p>
+          <span class="yours"><strong>Your move:</strong> Actually read the Closing Disclosure. Compare it to your Loan Estimate. Ask about anything that changed.</span>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num"></div>
+        <div>
+          <h3>Closing</h3>
+          <p>You sign, your funds are wired, and the home becomes yours. It feels like a lot of paperwork because it is a lot of paperwork, but by now you understand every piece of it. Then someone hands you the keys.</p>
+          <span class="yours"><strong>Your move:</strong> Confirm wire instructions by phone with a known number. Wire fraud is real, and a thirty-second call prevents it.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="decode">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Decode the Jargon</span>
+      <h2>The words they'll use, in plain English.</h2>
+      <p>You'll hear these on every call. Tap any one to translate it. The rule is simple: if you can't explain it, don't sign it.</p>
+    </div>
+    <div class="terms">
+
+      <details class="term">
+        <summary><h3>Interest rate vs. APR</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">Your rate is the cost of borrowing. Your APR is that rate plus most of the fees, expressed as a yearly percentage.</span> APR is the more honest apples-to-apples number when you're comparing lenders, because a low rate with high fees can cost more than a slightly higher rate with none.</div>
+      </details>
+
+      <details class="term">
+        <summary><h3>DTI (Debt-to-Income)</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">The percentage of your monthly income that goes to debt payments.</span> Underwriters use it to answer one question: can you comfortably carry this new payment on top of what you already owe? Lower is stronger. Paying down a card before you apply can move this number in your favor.</div>
+      </details>
+
+      <details class="term">
+        <summary><h3>LTV (Loan-to-Value)</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">How much you're borrowing compared to what the home is worth.</span> Put 20% down and your LTV is 80%. A lower LTV means less risk to the lender, which can mean a better rate and no mortgage insurance.</div>
+      </details>
+
+      <details class="term">
+        <summary><h3>PMI &amp; MIP</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">Mortgage insurance. It protects the lender, not you, when you put down less than 20%.</span> On conventional loans it's PMI and it can eventually fall off. On FHA loans it's MIP and the rules are different. On a VA loan, there is none at all, which is a big deal.</div>
+      </details>
+
+      <details class="term">
+        <summary><h3>Escrow</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">An account your lender uses to collect a slice of your property taxes and insurance with every payment, then pays those bills for you when they come due.</span> It keeps a giant tax bill from landing on you all at once. The word also refers to the neutral third party that holds funds during closing.</div>
+      </details>
+
+      <details class="term">
+        <summary><h3>Points</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">Money you can pay up front to buy your interest rate down.</span> One point is one percent of the loan amount. Sometimes it's worth it, sometimes it isn't. The math depends on how long you'll keep the loan, and a good loan officer will show you that math instead of hiding it.</div>
+      </details>
+
+      <details class="term">
+        <summary><h3>Loan Estimate &amp; Closing Disclosure</h3><span class="sign">+</span></summary>
+        <div class="def"><span class="plain">Two standardized forms the law requires. The Loan Estimate comes near the start and shows your projected terms and costs. The Closing Disclosure comes at the end and shows the finals.</span> Put them side by side. They're designed to be compared, so compare them.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="numbers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What Underwriters Weigh</span>
+      <h2>Four numbers do most of the deciding.</h2>
+      <p>Approval isn't a personality test. It comes down to a handful of measurable things. Know them, and you can strengthen your file before you ever apply.</p>
+    </div>
+    <div class="num-grid">
+      <div class="num-card">
+        <span class="acr">Credit</span>
+        <h3>Your track record</h3>
+        <p>Your credit history shows how you've handled borrowing before. It influences whether you qualify and at what rate. You can improve it, and a few months of clean payments before applying can genuinely move your number.</p>
+      </div>
+      <div class="num-card">
+        <span class="acr">Capacity / DTI</span>
+        <h3>Room in your budget</h3>
+        <p>Your debt-to-income ratio proves you can carry the payment. Lowering existing debt before you apply directly widens what you qualify for.</p>
+      </div>
+      <div class="num-card">
+        <span class="acr">Down payment / LTV</span>
+        <h3>Skin in the game</h3>
+        <p>How much you bring affects your rate, your insurance, and your monthly cost. But down payment myths cost people homes. You often need far less than you think, and some loans need nothing down.</p>
+      </div>
+      <div class="num-card">
+        <span class="acr">Reserves</span>
+        <h3>Cushion after closing</h3>
+        <p>Lenders like to see money left in the tank after you close, proof you can weather a surprise. It's not always required, but it strengthens a file when it's there.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="va-thread">
+  <div class="wrap">
+    <span class="eyebrow">If You Served</span>
+    <h2>Your loan is different. It's also better, and often misunderstood.</h2>
+    <p>The VA loan is the strongest benefit in American lending: no down payment, no monthly mortgage insurance, and competitive rates, all backed by your service. Yet veterans get talked out of it constantly, usually by people who never learned how it works.</p>
+    <p>I co-founded Vetted VA to end that. If you're a veteran or active duty, you deserve a professional who has proven they understand your benefit, not one who's guessing with your future.</p>
+    <a class="btn" href="https://vettedva.com" target="_blank" rel="noopener">See how the VA loan really works</a>
+  </div>
+</section>
+
+<div class="close">
+  <h2>Now you understand it. Let's get you home.</h2>
+  <p>You read the whole process. You can hold your own on any call now. When you're ready, start your application, or reach out and ask me anything first.</p>
+  <a class="btn btn-brass" href="#" data-lead-open data-download="/homebuyer-guide.pdf" data-interest="Homebuyer Guide" data-source="homebuyer" data-title="Get the free homebuyer guide" data-sub="The whole process on paper, yours to keep. Tell me where to send it.">Download the free guide</a>
+  <a class="btn btn-ghost" href="https://edge.my1003app.com/270165/register" target="_blank" rel="noopener">Start your application</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Nathan Knottingham, Mortgage Broker, NMLS #270165.</strong> Verify licensing at <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener">NMLS Consumer Access</a>. EDGE Home Finance, LLC, Company NMLS #891464. Equal Housing Opportunity. Licensed in TX.</p>
+    <p>This page is educational and is not a commitment to lend, financial advice, or a guarantee of loan terms. All loans are subject to credit approval and underwriting guidelines. Programs, rates, terms, and conditions are subject to change without notice.</p>
+    <p>&copy; 2026 Nathan Knottingham. Built in North Texas.</p>
+  </div>
+</footer>
+
+<script>
+  // Paste your deployed Apps Script /exec URL here once (from Code.gs setup):
+  window.LEAD_ENDPOINT = '';
+</script>
+<script src="/capture.js" defer></script>
+
+</body>
+</html>

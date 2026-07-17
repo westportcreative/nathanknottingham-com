@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nathan Knottingham | VA Loans, Loan Officer Careers, and MLO Training</title>
+<meta name="description" content="Nathan Knottingham, NMLS #270165. VA loan specialist, loan officer team builder, and founder of MLO Force. Get a mortgage, join the team, or train with us.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23B41824' d='M2 6l8 3.2v5.6L2 18zM22 6l-8 3.2v5.6L22 18z'/%3E%3Crect fill='%23C9963B' x='10' y='9' width='4' height='6' rx='1'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #101B2D;
+    --ink-deep: #0A1220;
+    --paper: #F2F0EA;
+    --paper-dim: #E7E4DB;
+    --brass: #C9963B;
+    --va-red: #B41824;
+    --force-blue: #7FA0BE;
+    --text-light: #EDEAE2;
+    --text-mute: #8B94A3;
+    --max: 1080px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--ink);
+    color: var(--text-light);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  h1, h2, h3 { font-family: 'Bricolage Grotesque', sans-serif; line-height: 1.08; }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Nav ---------- */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10, 18, 32, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(237,234,226,0.08);
+  }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .nav-name {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 800; font-size: 1rem; color: var(--text-light);
+    text-decoration: none; letter-spacing: 0.01em; white-space: nowrap;
+  }
+  .nav-name span { color: var(--brass); }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-mute); text-decoration: none;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible { color: var(--text-light); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--brass); outline-offset: 3px; border-radius: 2px;
+  }
+  @media (max-width: 640px) { .nav-links { display: none; } }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 96px 0 72px; }
+  .hero .eyebrow { color: var(--brass); margin-bottom: 20px; }
+  .hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+    font-weight: 800; max-width: 17ch; margin-bottom: 24px;
+  }
+  .hero h1 em { font-style: normal; color: var(--brass); }
+  .hero p {
+    max-width: 54ch; color: var(--text-mute); font-size: 1.125rem; margin-bottom: 56px;
+  }
+
+  /* ---------- Router (signature) ---------- */
+  .router { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  @media (max-width: 800px) { .router { grid-template-columns: 1fr; } }
+  .route {
+    display: block; text-decoration: none;
+    border: 1px solid rgba(237,234,226,0.12);
+    background: rgba(237,234,226,0.03);
+    padding: 28px 24px 24px;
+    color: var(--text-light);
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  }
+  .route:hover, .route:focus-visible {
+    transform: translateY(-3px);
+    background: rgba(237,234,226,0.06);
+  }
+  .route .eyebrow { display: block; margin-bottom: 14px; }
+  .route h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 10px; }
+  .route p { font-size: 0.95rem; color: var(--text-mute); margin-bottom: 18px; }
+  .route .go { font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.08em; }
+  .route-borrow { border-top: 3px solid var(--va-red); }
+  .route-borrow .eyebrow, .route-borrow .go { color: #E05560; }
+  .route-borrow:hover { border-color: var(--va-red); }
+  .route-team { border-top: 3px solid var(--brass); }
+  .route-team .eyebrow, .route-team .go { color: var(--brass); }
+  .route-team:hover { border-color: var(--brass); }
+  .route-train { border-top: 3px solid var(--force-blue); }
+  .route-train .eyebrow, .route-train .go { color: var(--force-blue); }
+  .route-train:hover { border-color: var(--force-blue); }
+
+  /* ---------- Sections ---------- */
+  section { padding: 88px 0; }
+  .section-head { max-width: 62ch; margin-bottom: 40px; }
+  .section-head .eyebrow { display: block; margin-bottom: 14px; }
+  .section-head h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; margin-bottom: 18px; }
+  .section-head p { color: var(--text-mute); font-size: 1.1rem; }
+  .light { background: var(--paper); color: var(--ink); }
+  .light .section-head p, .light .card p { color: #4A5261; }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 40px; }
+  @media (max-width: 800px) { .cards { grid-template-columns: 1fr; } }
+  .card { border: 1px solid rgba(237,234,226,0.12); padding: 24px; }
+  .light .card { border-color: rgba(16,27,45,0.14); background: #FBFAF6; }
+  .card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 10px; }
+  .card p { font-size: 0.95rem; color: var(--text-mute); }
+
+  .btn {
+    display: inline-block; text-decoration: none;
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 1rem;
+    padding: 14px 28px; border: 1px solid transparent;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); opacity: 0.92; }
+  .btn-red { background: var(--va-red); color: #fff; }
+  .btn-brass { background: var(--brass); color: var(--ink-deep); }
+  .btn-blue { background: var(--force-blue); color: var(--ink-deep); }
+  .btn-ghost { border-color: rgba(16,27,45,0.3); color: var(--ink); margin-left: 12px; }
+  .dark-ghost { border-color: rgba(237,234,226,0.3); color: var(--text-light); margin-left: 12px; }
+  @media (max-width: 520px) {
+    .btn-ghost, .dark-ghost { margin-left: 0; margin-top: 12px; }
+  }
+
+  #borrow .eyebrow { color: var(--va-red); }
+  #team { background: var(--ink-deep); }
+  #team .eyebrow { color: var(--brass); }
+  #train .eyebrow { color: #2E6FA3; }
+
+  /* ---------- Proof strip ---------- */
+  .proof { background: var(--ink-deep); border-top: 1px solid rgba(237,234,226,0.08); border-bottom: 1px solid rgba(237,234,226,0.08); padding: 44px 0; }
+  .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+  @media (max-width: 800px) { .proof-grid { grid-template-columns: repeat(2, 1fr); } }
+  .proof-item .big { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--brass); }
+  .proof-item .small { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-mute); margin-top: 6px; }
+
+  /* ---------- About ---------- */
+  #about p { max-width: 62ch; margin-bottom: 18px; color: #3A4150; }
+  #about .eyebrow { color: #2E6FA3; }
+
+  /* ---------- Contact ---------- */
+  #contact { text-align: center; padding: 100px 0; }
+  #contact h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 16px; }
+  #contact p { color: var(--text-mute); max-width: 48ch; margin: 0 auto 32px; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    background: var(--ink-deep); border-top: 1px solid rgba(237,234,226,0.08);
+    padding: 40px 0; font-size: 0.82rem; color: var(--text-mute);
+  }
+  footer .wrap > p { margin-bottom: 12px; max-width: 90ch; }
+  footer a { color: var(--text-mute); }
+
+  /* ---------- Vetted VA dual doors ---------- */
+  .vva-split { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+  @media (max-width: 700px) { .vva-split { grid-template-columns: 1fr; } }
+  .vva-door {
+    display: block; text-decoration: none; color: var(--ink);
+    background: #FBFAF6; border: 1px solid rgba(16,27,45,0.14);
+    border-left: 4px solid var(--va-red); padding: 26px 24px;
+    transition: transform 0.18s ease, border-color 0.18s ease;
+  }
+  .vva-door:hover, .vva-door:focus-visible { transform: translateY(-3px); border-color: var(--va-red); }
+  .vva-door .eyebrow { display: block; color: var(--va-red); margin-bottom: 12px; }
+  .vva-door h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 8px; }
+  .vva-door p { font-size: 0.95rem; color: #4A5261; }
+
+  /* ---------- Watch ---------- */
+  #watch .eyebrow { color: var(--brass); }
+  .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
+  @media (max-width: 800px) { .video-grid { grid-template-columns: 1fr; } }
+  .video-main { display: grid; gap: 14px; }
+  .video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--ink-deep); border: 1px solid rgba(237,234,226,0.12); }
+  .video-frame iframe, .video-short iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-short { position: relative; aspect-ratio: 9 / 16; max-width: 320px; margin: 0 auto; width: 100%; background: var(--ink-deep); border: 1px solid rgba(237,234,226,0.12); }
+  .video-cap { font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-mute); margin-top: 8px; }
+
+  /* ---------- Social strip ---------- */
+  .social { background: var(--ink-deep); border-top: 1px solid rgba(237,234,226,0.08); padding: 64px 0; }
+  .social .eyebrow { color: var(--brass); display: block; margin-bottom: 24px; }
+  .social-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 800px) { .social-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .social-grid { grid-template-columns: 1fr; } }
+  .social-link {
+    display: block; text-decoration: none; color: var(--text-light);
+    border: 1px solid rgba(237,234,226,0.12); padding: 20px;
+    transition: transform 0.18s ease, border-color 0.18s ease;
+  }
+  .social-link:hover, .social-link:focus-visible { transform: translateY(-3px); border-color: var(--brass); }
+  .social-link h3 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1rem; font-weight: 600; margin-bottom: 6px; }
+  .social-link p { font-size: 0.85rem; color: var(--text-mute); }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#top"><svg width="18" height="18" viewBox="0 0 24 24" style="vertical-align:-3px;margin-right:7px" aria-hidden="true"><path fill="#B41824" d="M2 6l8 3.2v5.6L2 18zM22 6l-8 3.2v5.6L22 18z"/><rect fill="#C9963B" x="10" y="9" width="4" height="6" rx="1"/></svg>Nathan <span>Knottingham</span></a>
+    <div class="nav-links">
+      <a href="#borrow">Get a Loan</a>
+      <a href="#team">Join the Team</a>
+      <a href="#train">Training</a>
+      <a href="#watch">Watch</a>
+      <a href="/dossier.html">Dossier</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <span class="eyebrow">Nathan Knottingham &middot; NMLS #270165 &middot; North Texas</span>
+  <h1>Three doors. <em>One handshake.</em></h1>
+  <p>I have been in mortgage since 2007. I close VA loans, I build loan officer careers, and I train the people who do this work right. Pick your door.</p>
+  <div class="router">
+    <a class="route route-borrow" href="/homebuyer.html">
+      <span class="eyebrow">For Homebuyers</span>
+      <h3>I want a mortgage</h3>
+      <p>VA loans done by someone who actually knows VA loans. Purchase, refinance, straight answers.</p>
+      <span class="go">Start here &rarr;</span>
+    </a>
+    <a class="route route-team" href="#team">
+      <span class="eyebrow">For Loan Officers</span>
+      <h3>I want a team</h3>
+      <p>You are good at this job and tired of being a number. Let's talk about what's next.</p>
+      <span class="go">See the pitch &rarr;</span>
+    </a>
+    <a class="route route-train" href="#train">
+      <span class="eyebrow">For the Industry</span>
+      <h3>I want training</h3>
+      <p>NMLS-approved CE and PE from MLO Force. VA education from Vetted VA. No fluff.</p>
+      <span class="go">Get trained &rarr;</span>
+    </a>
+  </div>
+</header>
+
+<div class="proof">
+  <div class="wrap proof-grid">
+    <div class="proof-item reveal"><div class="big">Since 2007</div><div class="small">Originating</div></div>
+    <div class="proof-item reveal"><div class="big">HousingWire</div><div class="small">Contributor</div></div>
+    <div class="proof-item reveal"><div class="big">MLO Force</div><div class="small">Founder &amp; CEO</div></div>
+    <div class="proof-item reveal"><div class="big">Vetted VA</div><div class="small">Co-Founder</div></div>
+  </div>
+</div>
+
+<section id="borrow" class="light">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get a Mortgage</span>
+      <h2>Your loan officer should know more than your lender's rate sheet.</h2>
+      <p>Most veterans get talked out of their own benefit by people who never learned how it works. I co-founded Vetted VA because that kept happening. Trust, but verify. Then let's get you home.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><h3>VA purchase</h3><p>Zero down done correctly. Entitlement math, funding fee exemptions, and offers that sellers actually take.</p></div>
+      <div class="card reveal"><h3>VA refinance</h3><p>IRRRLs and cash-out with real break-even math up front. If it doesn't help you, I'll tell you.</p></div>
+      <div class="card reveal"><h3>Every other loan too</h3><p>Conventional, FHA, and the rest. Nineteen years of files means very few surprises.</p></div>
+    </div>
+    <div class="vva-split reveal">
+      <a class="vva-door" href="https://vettedva.com" target="_blank" rel="noopener">
+        <span class="eyebrow">For Veterans</span>
+        <h3>I'm a Veteran. Serve me.</h3>
+        <p>Get matched with a Vetted VA professional who has proven, on the record, that they know your benefit. Over 5,000 families served since 2020.</p>
+      </a>
+      <a class="vva-door" href="https://vettedva.com" target="_blank" rel="noopener">
+        <span class="eyebrow">For Professionals</span>
+        <h3>I'm a pro. Vet me.</h3>
+        <p>Join the Vetted VA membership. Prove your VA knowledge, wear the badge, and earn the trust that comes with it.</p>
+      </a>
+    </div>
+    <div class="reveal">
+      <a class="btn btn-red" href="https://edge.my1003app.com/270165/register" target="_blank" rel="noopener">Apply now</a>
+      <a class="btn btn-ghost" href="/homebuyer.html">Understand the loan first</a>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Join the Team</span>
+      <h2>Built for the quiet professionals who stayed.</h2>
+      <p>The industry sheds licenses every cycle. The people still standing are the ones who treat this like a craft. If that's you, I want to talk. Not a rah-rah recruiting pitch. A real conversation about your book, your goals, and whether we fit.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><h3>Mentorship that shows up</h3><p>I have trained loan officers for two decades. You get access, not an org chart.</p></div>
+      <div class="card reveal"><h3>Identity, not scripts</h3><p>We build your business around who you are and who you serve. That's the whole Vetted VA thesis.</p></div>
+      <div class="card reveal"><h3>Education baked in</h3><p>You sit one door down from an NMLS-approved school. Your growth is literally the family business.</p></div>
+    </div>
+    <div class="reveal">
+      <a class="btn btn-brass" href="#contact">Let's talk, confidentially</a>
+    </div>
+  </div>
+</section>
+
+<section id="train" class="light">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Training &amp; Education</span>
+      <h2>CE you'd take even if it weren't required.</h2>
+      <p>Story first, statute second. That's how I've taught mortgage education for twenty years, and it's how MLO Force builds every course. For independent-minded originators who pick their own CE instead of taking what corporate assigns.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><h3>MLO Force CE &amp; PE</h3><p>NMLS-approved continuing education and pre-licensure. Live CE days, webinars, and self-paced courses.</p></div>
+      <div class="card reveal"><h3>Vetted VA education</h3><p>VA loan mastery for LOs and agents. Learn the benefit well enough to defend it in the wild.</p></div>
+      <div class="card reveal"><h3>Team &amp; company training</h3><p>Live events, custom webinars, and compliance training built for your shop, delivered by people who originate.</p></div>
+    </div>
+    <div class="reveal">
+      <a class="btn btn-blue" href="https://mloforce.com" target="_blank" rel="noopener">Browse MLO Force courses</a>
+      <a class="btn btn-ghost" href="https://vettedva.com" target="_blank" rel="noopener">Explore Vetted VA</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="light" style="background: var(--paper-dim);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">About Nathan</span>
+      <h2>Fourth-generation Oregonian. First-generation Texan.</h2>
+    </div>
+    <div class="reveal">
+      <p>I started in mortgage in 2007, which means my first year in the business was everyone else's worst. That timing taught me everything: the loan officers who survived were the ones who knew their craft and told the truth.</p>
+      <p>Since then I've originated, run training and operations for a national mortgage school, co-founded Vetted VA with Christopher Griffith, and built MLO Force into an NMLS-approved education provider. I write for HousingWire, speak at industry conferences, and serve as president of my local chamber of commerce.</p>
+      <p>Off the clock I'm a husband to Billie Julene, dad to Titus and Trinity, a church bass player, and a firm believer that a well-tied bow tie fixes most problems.</p>
+    </div>
+  </div>
+</section>
+
+<section id="watch">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Watch</span>
+      <h2>Straight talk, on camera.</h2>
+      <p>VA loan truth, industry commentary, and training previews from the YouTube channel. Subscribe and you'll never miss a myth getting busted.</p>
+    </div>
+    <div class="video-grid reveal">
+      <div class="video-main">
+        <div>
+          <!-- Featured video 1: edit the caption below to the video title -->
+          <div class="video-frame"><iframe src="https://www.youtube.com/embed/my9-imcX9nM" title="Featured video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-cap">Featured</div>
+        </div>
+        <div>
+          <!-- Featured video 2: edit the caption below to the video title -->
+          <div class="video-frame"><iframe src="https://www.youtube.com/embed/uNjpzKjomDM" title="Featured video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-cap">Featured</div>
+        </div>
+      </div>
+      <div>
+        <!-- Featured Short -->
+        <div class="video-short"><iframe src="https://www.youtube.com/embed/BuK_uLneV8Q" title="Featured short" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video-cap" style="text-align:center;">Short take</div>
+      </div>
+    </div>
+    <div class="reveal" style="margin-top: 32px;">
+      <a class="btn btn-brass" href="https://youtube.com/@nathanknottinghamofficial" target="_blank" rel="noopener">Subscribe on YouTube</a>
+    </div>
+  </div>
+</section>
+
+<div class="social">
+  <div class="wrap">
+    <span class="eyebrow">Connect</span>
+    <div class="social-grid">
+      <a class="social-link reveal" href="https://youtube.com/@nathanknottinghamofficial" target="_blank" rel="noopener">
+        <h3>YouTube</h3>
+        <p>Long-form teaching and short-form myth busting.</p>
+      </a>
+      <a class="social-link reveal" href="https://www.instagram.com/n8knottingham/" target="_blank" rel="noopener">
+        <h3>Instagram</h3>
+        <p>@n8knottingham. Daily life, deals, and the occasional bow tie.</p>
+      </a>
+      <a class="social-link reveal" href="https://www.facebook.com/nate.knottingham/" target="_blank" rel="noopener">
+        <h3>Facebook</h3>
+        <p>Training LOs. Empowering Veterans. Building legacy.</p>
+      </a>
+      <a class="social-link reveal" href="https://www.linkedin.com/in/nathanknottingham/" target="_blank" rel="noopener">
+        <h3>LinkedIn</h3>
+        <p>Industry commentary, hiring, and speaking inquiries.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <h2>Pick up where the website leaves off.</h2>
+    <p>One email reaches me directly. Tell me which door you walked through and I'll take it from there.</p>
+    <a class="btn btn-brass" href="mailto:nathan.knottingham@edgehomefinance.com">Email Nathan</a>
+    <a class="btn dark-ghost" href="tel:503-949-7517">Call 503-949-7517</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Nathan Knottingham, Mortgage Broker, NMLS #270165.</strong> Verify licensing at <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener">NMLS Consumer Access</a>. EDGE Home Finance, LLC, Company NMLS #891464. Equal Housing Opportunity. Licensed in TX.</p>
+    <p>This is not a commitment to lend. All loans are subject to credit approval and underwriting guidelines. Programs, rates, terms, and conditions are subject to change without notice. MLO Force is an NMLS-approved course provider; education content on this site is informational and not legal or compliance advice.</p>
+    <p>&copy; 2026 Nathan Knottingham. Built in North Texas.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
