@@ -83,8 +83,15 @@
   }
   .hero h1 em { font-style: normal; color: var(--brass); }
   .hero p {
-    max-width: 54ch; color: var(--text-mute); font-size: 1.125rem; margin-bottom: 56px;
+    max-width: 54ch; color: var(--text-mute); font-size: 1.125rem;
   }
+  .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center; margin-bottom: 56px; }
+  @media (max-width: 800px) { .hero-grid { grid-template-columns: 1fr; } }
+  .hero-photo {
+    width: 300px; height: 400px; object-fit: cover; object-position: top center;
+    border: 3px solid var(--brass); flex-shrink: 0;
+  }
+  @media (max-width: 800px) { .hero-photo { width: 220px; height: 290px; } }
 
   /* ---------- Router (signature) ---------- */
   .router { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
@@ -240,10 +247,16 @@
   </div>
 </nav>
 
-<header class="hero wrap" id="top">
-  <span class="eyebrow">Nathan Knottingham &middot; NMLS #270165 &middot; North Texas</span>
-  <h1>Three doors. <em>One handshake.</em></h1>
-  <p>I have been in mortgage since 2007. I close VA loans, I build loan officer careers, and I train the people who do this work right. Pick your door.</p>
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Nathan Knottingham &middot; NMLS #270165 &middot; North Texas</span>
+      <h1>Three doors. <em>One handshake.</em></h1>
+      <p>I have been in mortgage since 2007. I close VA loans, I build loan officer careers, and I train the people who do this work right. Pick your door.</p>
+    </div>
+    <img class="hero-photo" src="/images/nathan-bowtie.jpg" alt="Nathan Knottingham">
+  </div>
+  <div class="wrap">
   <div class="router">
     <a class="route route-borrow" href="/homebuyer.html">
       <span class="eyebrow">For Homebuyers</span>
@@ -263,6 +276,7 @@
       <p>NMLS-approved CE and PE from MLO Force. VA education from Vetted VA. No fluff.</p>
       <span class="go">Get trained &rarr;</span>
     </a>
+  </div>
   </div>
 </header>
 
