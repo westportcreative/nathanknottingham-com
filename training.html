@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLO Force Training | NMLS CE, PE &amp; Compliance | Nathan Knottingham</title>
+<meta name="description" content="Everything MLO Force teaches in one place: NMLS-approved continuing education and pre-licensure, the 2026 Compliance Cheat Codes series, and a state-by-state NMLS requirements lookup.">
+<link rel="canonical" href="https://nathanknottingham.com/training.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MLO Force Training | NMLS CE, PE & Compliance">
+<meta property="og:description" content="NMLS-approved CE and PE, the 2026 Compliance Cheat Codes series, and a state-by-state NMLS requirements lookup, all in one place.">
+<meta property="og:url" content="https://nathanknottingham.com/training.html">
+<meta property="og:site_name" content="Nathan Knottingham">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23B41824' d='M2 6l8 3.2v5.6L2 18zM22 6l-8 3.2v5.6L22 18z'/%3E%3Crect fill='%23C9963B' x='10' y='9' width='4' height='6' rx='1'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #101B2D;
+    --ink-deep: #0A1220;
+    --paper: #F2F0EA;
+    --paper-dim: #E7E4DB;
+    --brass: #C9963B;
+    --va-red: #B41824;
+    --force-blue: #9CC3E5;
+    --text-light: #EDEAE2;
+    --text-mute: #8B94A3;
+    --body-mute: #4A5261;
+    --max: 880px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 1.0625rem;
+    line-height: 1.72;
+  }
+  h1, h2, h3 { font-family: 'Bricolage Grotesque', sans-serif; line-height: 1.1; }
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* Nav */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10, 18, 32, 0.94); backdrop-filter: blur(8px);
+  }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-name { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1rem; color: var(--text-light); text-decoration: none; }
+  .nav-name span { color: var(--brass); }
+  .nav-back { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mute); text-decoration: none; }
+  .nav-back:hover { color: var(--text-light); }
+
+  /* Hero */
+  header { background: var(--ink); color: var(--text-light); padding: 84px 0 68px; }
+  header .eyebrow { color: var(--brass); display: block; margin-bottom: 18px; }
+  header h1 { font-size: clamp(2.1rem, 5.5vw, 3.4rem); font-weight: 800; margin-bottom: 22px; max-width: 20ch; }
+  header p { color: var(--text-mute); max-width: 60ch; font-size: 1.12rem; margin-bottom: 32px; }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+  /* Buttons */
+  .btn {
+    display: inline-block; text-decoration: none;
+    font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 1rem;
+    padding: 15px 30px; transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); opacity: 0.93; }
+  .btn-brass { background: var(--brass); color: var(--ink-deep); }
+  .btn-ghost { border: 1px solid rgba(237,234,226,0.3); color: var(--text-light); }
+  .btn-outline { border: 1.5px solid var(--ink); color: var(--ink); background: transparent; }
+  .btn-outline:hover { background: var(--ink); color: var(--text-light); }
+
+  /* Sections */
+  section { padding: 56px 0; }
+  .section-head { margin-bottom: 36px; }
+  .section-head .eyebrow { color: var(--va-red); display: block; margin-bottom: 12px; }
+  .section-head h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 14px; }
+  .section-head p { color: var(--body-mute); max-width: 66ch; }
+
+  /* Inside cards (the two sub-pages) */
+  .inside-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 700px) { .inside-grid { grid-template-columns: 1fr; } }
+  .inside-card {
+    display: block; text-decoration: none; color: var(--text-light);
+    background: var(--ink); border: 1px solid rgba(237,234,226,0.12);
+    padding: 28px 26px 24px; transition: transform 0.18s ease, border-color 0.18s ease;
+  }
+  .inside-card:hover, .inside-card:focus-visible { transform: translateY(-3px); }
+  .inside-card .eyebrow { display: block; margin-bottom: 14px; }
+  .inside-card.cheat-codes { border-top: 3px solid var(--brass); }
+  .inside-card.cheat-codes .eyebrow, .inside-card.cheat-codes .go { color: var(--brass); }
+  .inside-card.cheat-codes:hover { border-color: var(--brass); }
+  .inside-card.nmls-reqs { border-top: 3px solid var(--force-blue); }
+  .inside-card.nmls-reqs .eyebrow, .inside-card.nmls-reqs .go { color: var(--force-blue); }
+  .inside-card.nmls-reqs:hover { border-color: var(--force-blue); }
+  .inside-card h3 { font-size: 1.3rem; font-weight: 600; margin-bottom: 10px; }
+  .inside-card p { font-size: 0.95rem; color: var(--text-mute); margin-bottom: 18px; }
+  .inside-card .go { font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; letter-spacing: 0.08em; }
+
+  /* CE / PE section */
+  .numbers { background: var(--paper-dim); }
+  .numbers .section-head .eyebrow { color: var(--va-red); }
+  .num-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 30px; }
+  @media (max-width: 720px) { .num-grid { grid-template-columns: 1fr; } }
+  .num-card { background: #FBFAF6; border: 1px solid rgba(16,27,45,0.14); border-top: 3px solid var(--brass); padding: 22px; }
+  .num-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
+  .num-card p { font-size: 0.95rem; color: var(--body-mute); }
+
+  /* Related (Vetted VA) */
+  .related { background: var(--va-red); color: #fff; }
+  .related .eyebrow { color: #F6C9CD; display: block; margin-bottom: 14px; }
+  .related h2 { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 800; margin-bottom: 16px; max-width: 26ch; }
+  .related p { max-width: 62ch; margin-bottom: 20px; color: #FBE4E6; }
+  .related .btn { background: #fff; color: var(--va-red); }
+
+  /* Close */
+  .close { background: var(--ink-deep); color: var(--text-light); text-align: center; padding: 84px 24px; }
+  .close h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 16px; }
+  .close p { color: var(--text-mute); max-width: 50ch; margin: 0 auto 30px; }
+
+  footer { background: var(--ink-deep); color: var(--text-mute); padding: 40px 0; font-size: 0.82rem; border-top: 1px solid rgba(237,234,226,0.08); }
+  footer .wrap > p { margin-bottom: 12px; max-width: 90ch; }
+  footer a { color: var(--text-mute); }
+
+  @media (max-width: 480px) { .btn-row .btn { width: 100%; text-align: center; } }
+</style>
+<script src="/analytics.js" defer></script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="/"><svg width="18" height="18" viewBox="0 0 24 24" style="vertical-align:-3px;margin-right:7px" aria-hidden="true"><path fill="#B41824" d="M2 6l8 3.2v5.6L2 18zM22 6l-8 3.2v5.6L22 18z"/><rect fill="#C9963B" x="10" y="9" width="4" height="6" rx="1"/></svg>Nathan <span>Knottingham</span></a>
+    <a class="nav-back" href="/">&larr; Back home</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Training &amp; Education &middot; MLO Force</span>
+    <h1>Everything MLO Force teaches, in one place.</h1>
+    <p>Story first, statute second. That's how I've taught mortgage education for twenty years, and it's how MLO Force builds every course &mdash; for independent-minded originators who pick their own education instead of taking whatever corporate assigns.</p>
+    <div class="btn-row">
+      <a class="btn btn-brass" href="https://mloforce.com?utm_source=nathanknottingham.com&amp;utm_medium=referral&amp;utm_campaign=training_hub&amp;utm_content=hero" target="_blank" rel="noopener">Browse MLO Force courses</a>
+      <a class="btn btn-ghost" href="#inside">See what's inside</a>
+    </div>
+  </div>
+</header>
+
+<section id="inside">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Inside MLO Force</span>
+      <h2>Two resources built for your team right now.</h2>
+      <p>The full CE and PE catalogue lives at MLO Force. These two are hosted here, built specifically for the originators and compliance teams who need them.</p>
+    </div>
+    <div class="inside-grid reveal">
+      <a class="inside-card cheat-codes" href="/mlo-force-compliance-training.html">
+        <span class="eyebrow">2026 Compliance Cheat Codes</span>
+        <h3>Nine modules, plus a bonus.</h3>
+        <p>Video-based annual compliance training covering privacy, fair lending, ECOA, TRID, UDAAP, and more. Built for onboarding and annual CE, taught by real compliance pros.</p>
+        <span class="go">See the catalogue &rarr;</span>
+      </a>
+      <a class="inside-card nmls-reqs" href="/nmls-requirements.html">
+        <span class="eyebrow">NMLS Requirements by State</span>
+        <h3>Click your state, see your hours.</h3>
+        <p>An interactive map of every state's NMLS pre-licensure and continuing education requirements. No more guessing what your renewal actually needs.</p>
+        <span class="go">Find your state &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="numbers">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Continuing Education &amp; Pre-Licensure</span>
+      <h2>The full MLO Force catalogue.</h2>
+      <p>NMLS-approved continuing education and pre-licensure, taught the way compliance training should be: relevant, memorable, and immediately applicable on the job.</p>
+    </div>
+    <div class="num-grid reveal">
+      <div class="num-card"><h3>Live CE days</h3><p>In-person and virtual sessions that knock out your annual hours in a single sitting.</p></div>
+      <div class="num-card"><h3>Self-paced courses</h3><p>Take your CE and PE on your own schedule, without losing the story-first teaching style.</p></div>
+      <div class="num-card"><h3>Enterprise &amp; white-label</h3><p>Group licensing and brandable LMS options for companies and sponsoring brokers.</p></div>
+    </div>
+    <div class="reveal">
+      <a class="btn btn-outline" href="https://mloforce.com?utm_source=nathanknottingham.com&amp;utm_medium=referral&amp;utm_campaign=training_hub&amp;utm_content=ce_section" target="_blank" rel="noopener">Browse the full catalogue</a>
+    </div>
+  </div>
+</section>
+
+<section class="related">
+  <div class="wrap">
+    <span class="eyebrow">Related, Not MLO Force</span>
+    <h2>Need VA-specific education instead?</h2>
+    <p>Vetted VA is a separate organization I co-founded: VA loan mastery for loan officers and agents who want to learn the benefit well enough to defend it in the wild.</p>
+    <a class="btn" href="https://vettedva.com" target="_blank" rel="noopener">Explore Vetted VA</a>
+  </div>
+</section>
+
+<div class="close reveal">
+  <h2>Pick your resource and get started.</h2>
+  <p>Whether it's annual compliance, a state's licensing hours, or your full CE and PE plan, the next step is one click away.</p>
+  <a class="btn btn-brass" href="https://mloforce.com?utm_source=nathanknottingham.com&amp;utm_medium=referral&amp;utm_campaign=training_hub&amp;utm_content=close" target="_blank" rel="noopener">Browse MLO Force courses</a>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Nathan Knottingham, Mortgage Broker, NMLS #270165.</strong> Verify licensing at <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener">NMLS Consumer Access</a>. EDGE Home Finance, LLC, Company NMLS #891464. Equal Housing Opportunity. Licensed in TX.</p>
+    <p>Call <a href="tel:503-949-7517">503-949-7517</a> &middot; <a href="mailto:nathan.knottingham@edgehomefinance.com">nathan.knottingham@edgehomefinance.com</a> &middot; <a href="https://www.edgehomefinance.com" target="_blank" rel="noopener">edgehomefinance.com</a></p>
+    <p>&copy; 2026 Nathan Knottingham. Built in North Texas.</p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

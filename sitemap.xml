@@ -13,6 +13,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nathanknottingham.com/training.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nathanknottingham.com/nmls-requirements.html</loc>
     <priority>0.7</priority>
   </url>
